@@ -1,6 +1,10 @@
  <?php
   
-  $con = mysqli_connect('localhost','jagjit','dd@123');
+  $conn = mysqli_connect("localhost", "jagjit", "", "#") or die(mysqli_error($conn));
+    
+    if(!isset($_SESSION)){
+        session_start();
+    }
 
     // get details
     
