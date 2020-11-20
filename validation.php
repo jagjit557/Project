@@ -1,6 +1,6 @@
 <?php
     
-$conn = mysqli_connect("localhost", "jagjit", "", "#") or die(mysqli_error($conn));
+$conn = mysqli_connect("localhost", "jagjit", "", "database") or die(mysqli_error($conn));
     
     if(!isset($_SESSION)){
         session_start();
@@ -21,6 +21,6 @@ $conn = mysqli_connect("localhost", "jagjit", "", "#") or die(mysqli_error($conn
         $_SESSION["email_id"] = $email;
         $_SESSION["id"] = $row["id"];
 
-        header("location: #");
+        header("location: home.php");
     }
 ?>
