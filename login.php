@@ -22,7 +22,7 @@
 					<div class="myform form ">
 						<div class="logo mb-4">
 						 	<div class="col-md-13 text-center">
-								<h0>Login</h1>
+								<h1>Login</h1>
 						 	</div>
 					  	</div>
                    				<form action="validation.php" method="post" name="login">
