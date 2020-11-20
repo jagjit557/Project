@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <head>
 <title>LogIn Page</title>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
