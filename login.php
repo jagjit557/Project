@@ -15,89 +15,89 @@
        <script src="javascript.js"></script> 
 </head>
 <body>
-    <div class="container">
-        <div class="row">
+	<div class="container">
+		<div class="row">
 			<div class="col-md-6 mx-auto">
-			<div id="first">
-				<div class="myform form ">
-					 <div class="logo mb-4">
-						 <div class="col-md-13 text-center">
-							<h0>Login</h1>
-						 </div>
-					</div>
-                   <form action="validation.php" method="post" name="login">
-                           <div class="form-group">
-                              <label for="exampleInputEmail0">Email address</label>
-                              <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email or phone">
-                           </div>
-                           <div class="form-group">
-                              <label for="exampleInputEmail0">Password</label>
-                              <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
-                           </div>
-                           <div class="form-group">
-                              <p class="text-center">By signing up you accept our <a href="#">Terms Of Use</a></p>
-                           </div>
-                           <div class="col-md-13 text-center ">
-                              <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
-                           </div>
-                           <div class="col-md-13 ">
-                              <div class="login-or">
-                                 <hr class="hr-or">
-                                 <span class="span-or">or</span>
-                              </div>
-                           </div>
-                           <div class="col-md-13 mb-3">
-                              <p class="text-center">
-                                 <a href="javascript:void();" class="google btn mybtn"><i class="fa fa-google-plus">
-                                 </i> Signup using Google
-                                 </a>
-                              </p>
-                           </div>
-                           <div class="form-group">
-                              <p class="text-center">Don't have account? <a href="registration.php" id="signup">Sign up here</a></p>
-                           </div>
-                        </form>
+				<div id="first">
+					<div class="myform form ">
+						<div class="logo mb-4">
+						 	<div class="col-md-13 text-center">
+								<h0>Login</h1>
+						 	</div>
+					  	</div>
+                   				<form action="validation.php" method="post" name="login">
+                           				<div class="form-group">
+                              					<label for="exampleInputEmail0">Email address</label>
+                              					<input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email or phone">
+                           				</div>
+                          	 			<div class="form-group">
+                              					<label for="exampleInputEmail0">Password</label>
+                              					<input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                           				</div>
+                           				<div class="form-group">
+                              					<p class="text-center">By signing up you accept our <a href="#">Terms Of Use</a></p>
+                           				</div>
+                           				<div class="col-md-13 text-center ">
+                              					<button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+                           				</div>
+                           				<div class="col-md-13 ">
+                              					<div class="login-or">
+                                 					<hr class="hr-or">
+                                 						<span class="span-or">or</span>
+                              					</div>
+                           				</div>
+                           				<div class="col-md-13 mb-3">
+                              					<p class="text-center">
+                                 					<a href="javascript:void();" class="google btn mybtn">
+										<i class="fa fa-google-plus"></i> 
+										Signup using Google
+                                 					</a>
+                              					</p>
+                           				</div>
+                           				<div class="form-group">
+                              					<p class="text-center">Don't have account? <a href="registration.php" id="signup">Sign up here</a></p>
+                           				</div>
+                        			</form>
                  
+					</div>
 				</div>
-			</div>
-			  <div id="second">
-			      <div class="myform form ">
-                        <div class="logo mb-4">
-                           <div class="col-md-13 text-center">
-                              <h0 >Signup</h1>
-                           </div>
-                        </div>
-                        <form action="registration.php" method="post" name="registration">
-                           <div class="form-group">
-                              <label for="exampleInputEmail0">First Name</label>
-                              <input type="text"  name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter Firstname">
-                           </div>
-                           <div class="form-group">
-                              <label for="exampleInputEmail0">Last Name</label>
-                              <input type="text"  name="lastname" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Enter Lastname">
-                           </div>
-                           <div class="form-group">
-                              <label for="exampleInputEmail0">Email address</label>
-                              <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-                           </div>
-                           <div class="form-group">
-                              <label for="exampleInputEmail0">Password</label>
-                              <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
-                           </div>
-                           <div class="col-md-13 text-center mb-3">
-                              <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Get Started For Free</button>
-                           </div>
-                           <div class="col-md-13 ">
-                              <div class="form-group">
-                                 <p class="text-center"><a href="login.php" id="signin">Already have an account?</a></p>
-                              </div>
-                           </div>
-                            </div>
-                        </form>
-                     </div>
-			</div>
+			  	<div id="second">
+			      	<div class="myform form ">
+                        		<div class="logo mb-4">
+                           			<div class="col-md-13 text-center">
+                              				<h0 >Signup</h1>
+                           			</div>
+                        		</div>
+                            		<form action="registration.php" method="post" name="registration">
+                           			<div class="form-group">
+                              				<label for="exampleInputEmail0">First Name</label>
+                              				<input type="text"  name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter Firstname">
+                           			</div>
+                           			<div class="form-group">
+                              				<label for="exampleInputEmail0">Last Name</label>
+                              				<input type="text"  name="lastname" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Enter Lastname">
+                           			</div>
+                           			<div class="form-group">
+                              				<label for="exampleInputEmail0">Email address</label>
+                              				<input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                           			</div>
+                           			<div class="form-group">
+                              				<label for="exampleInputEmail0">Password</label>
+                              				<input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                           			</div>
+                           			<div class="col-md-13 text-center mb-3">
+                              				<button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Get Started For Free</button>
+                           			</div>
+                           			<div class="col-md-13 ">
+                              				<div class="form-group">
+                                 				<p class="text-center"><a href="login.php" id="signin">Already have an account?</a></p>
+                              				</div>
+                           			</div>
+                            		</div>
+                        	</form>
+                   	</div>
 		</div>
-      </div>   
-         
+	</div>
+</div>   
 </body>
 </html>
