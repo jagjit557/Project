@@ -202,7 +202,7 @@ $(function() {
                               </p>
                            </div>
                            <div class="form-group">
-                              <p class="text-center">Don't have account? <a href="" id="signup">Sign up here</a></p>
+                              <p class="text-center">Don't have account? <a href="signup.php" id="signup">Sign up here</a></p>
                            </div>
                         </form>
                  
