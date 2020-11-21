@@ -1,34 +1,34 @@
- <?php
-  
-  $conn = mysqli_connect("localhost", "root", "", "database") or die(mysqli_error($conn));
-    
-    if(!isset($_SESSION)){
-        session_start();
-    }
-
-    // get details
-    
-    $firstname = mysqli_real_escape_string($conn, $_POST["firstname"]);
+<?php
+ 	session_start();
+ 	header('location:login.php');
+ 	
+ 	$conn = mysqli_connect('localhost','root','','database');
+ 	if($conn){
+ 		echo"connection success";
+ 	}
+ 	else{
+ 		echo"connection NOT sucess";
+ 	}
+ 	
+ 	mysqli_select_db($conn, 'database');
+ 	
+ 	$firstname = mysqli_real_escape_string($conn, $_POST["firstname"]);
     $lastname = mysqli_real_escape_string($conn, $_POST["lastname"]);
     $email = mysqli_real_escape_string($conn, $_POST["email"]);
-    $password = mysqli_real_escape_string($conn, $_POST["password"]);
-    
-    $hashed_password = md5($password);
-    $query1 = "SELECT id FROM users WHERE email = '$email' AND password = '$hashed_password'";
-    $query1 = "INSERT INTO users (name, email, password, contact, city, address) VALUES ('$name', $lastname, '$email', '$hashed_password')";
-
-    // check if already registered user
-    $result = mysqli_query($conn, $query1);
-    if(mysqli_num_rows($result) > 0){
-        // email already exists
-        echo "Email id already exists. Try another";
-    }else{
-        // perform query operation
-        $result = mysqli_query($conn, $query2);
-        $_SESSION["email_id"] = $email;
-        $_SESSION["id"] = mysqli_insert_id($conn);
-
-       
-        header("location: login.php");
-    }
-?>
+    $password = mysqli_real_escape_string($conn, $_POST["password"]);	
+ 	
+ 	$q="select * from users where email = '$email' && password = '$password' ";
+ 	
+ 	$result = mysqli_query($con,$q);
+ 	
+ 	$num = mysqli_num_rows($result);
+ 	
+ 	if($num==1){
+ 		echo"Duplicate data";
+ 	}
+ 	else{
+ 		$qy="insert into users(firstname,lastname,email,password) values ('$firstname','$lastname','$email','$password')";
+ 		mysqli_query($conn,$qy);
+ 	}
+ 	
+ ?>
