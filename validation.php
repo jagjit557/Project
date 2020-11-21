@@ -1,26 +1,32 @@
 <?php
-    
-$conn = mysqli_connect("localhost", "root", "", "database") or die(mysqli_error($conn));
-    
-    if(!isset($_SESSION)){
-        session_start();
-    }
-
-
-    $email = mysqli_real_escape_string($conn, $_POST["email"]);
-    $password = mysqli_real_escape_string($conn, $_POST["password"]);
-    $hashed_password = md5($password);
-
-    $query = "SELECT * FROM users WHERE email = '$email' AND password = '$hashed_password'";
-    $query_result = mysqli_query($conn, $query);
-
-    if(mysqli_num_rows($query_result) == 0){
-        echo "User account does not exists.";
-    }else{
-        $row = mysqli_fetch_array($query_result);
-        $_SESSION["email_id"] = $email;
-        $_SESSION["id"] = $row["id"];
-
-        header("location: home.php");
-    }
-?>
+ 	session_start();
+ 	header('location:login.php');
+ 	
+ 	$conn = mysqli_connect('localhost','root','','database');
+ 	if($conn){
+ 		echo"connection success";
+ 	}
+ 	else{
+ 		echo"connection NOT sucess";
+ 	}
+ 	
+ 	mysqli_select_db($con, 'database');
+ 	
+ 	$email=$_POST['email'];
+ 	$password=$_POST['password'];
+ 	
+ 	$q="select * from users where email = 'email' && 'password' = '$password' ";
+ 	
+ 	$result = mysqli_query($conn,$q);
+ 	
+ 	$num = mysqli_num_rows($result);
+ 	
+ 	if($num==1){
+ 		$_SESSION['email'] = $email;
+ 		header('location:home.php');
+ 	}
+ 	else{
+ 		header('location:login.php');
+ 	}
+ 	
+ ?>
